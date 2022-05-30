@@ -1,0 +1,24 @@
+{
+	"name": "imagescreening",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "npm run build && node dist/index.js",
+		"watch": "nodemon --ext ts --exec 'tsc && node dist/index.js'"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^13.7.0",
+		"dotenv": "^10.0.0",
+		"googleapis": "^39.2.0"
+	},
+	"devDependencies": {
+		"@types/node-fetch": "^2.5.12",
+		"eslint": "^8.0.0",
+		"eslint-config-prettier": "^8.3.0",
+		"prettier": "2.4.1"
+	}
+}
