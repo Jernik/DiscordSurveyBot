@@ -6,7 +6,8 @@
 	"scripts": {
 		"build": "tsc",
 		"start": "npm run build && node dist/index.js",
-		"watch": "nodemon --ext ts --exec 'tsc && node dist/index.js'"
+		"watch": "nodemon --ext ts --exec 'tsc && node dist/index.js'",
+		"start-prod": "node dist/index.js"
 	},
 	"author": "",
 	"license": "ISC",
