@@ -448,15 +448,10 @@ let buildTextOnlyUpdate = buildTextOnlyMessage as (
 	responseOptions: TextOnlyResponse
 )=> InteractionUpdateOptions;
 
-let buildTextOnlyReply = (
+let buildTextOnlyReply = buildTextOnlyMessage as(
 	nextState: string,
 	responseOptions: TextOnlyResponse
-): InteractionReplyOptions => {
-	return buildTextOnlyMessage(
-		nextState,
-		responseOptions
-	) as InteractionReplyOptions;
-};
+)=> InteractionReplyOptions;
 
 async function saveFeedback(
 	user: GuildMember,

@@ -1,11 +1,18 @@
-# DiscordImageScreening
+# Survey Bot
 
-a simple bot to allow moderators to approve images posted to a channel
+A bot that saves discord survey results to google sheets.
 
-to run it add a .env file to the root of the repo with the following format:
+![example gif](demo.gif)
+
+## Requirements
+
+## Set up google sheets api
+
+TBD
+
+## env file
 
 DISCORD_TOKEN=<token>
-CLIENT_ID=<client_id>
-APPROVAL_CHANNEL_ID=<the channel your moderators review images in>
-SCANNING_CHANNELS=[{"submission_channel_id":"975471862781980743", "approved_images_channel_id":"975471917257617498"}]
-MODERATOR_ROLE_IDS=["475331845605687306"]
+CLIENT_ID=<client Id>
+LOG_CHANNEL_ID=<mostly unused but discord channel id here>
+PLAYSTATION_FEEDBACK_SHEET_ID=<the google sheet id to put the one functional survey into>
